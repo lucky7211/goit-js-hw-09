@@ -1,0 +1,42 @@
+.feedback-form{
+
+    margin-top: 50px;
+
+    padding: 24px;
+    width:408px;
+    height: 296px;
+    /* gap: 16px; */
+}
+
+
+ .email{
+    display: block;
+    width: 360px;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}  
+
+.message{
+    margin-top: 8px;
+    margin-bottom: 24px;
+    width: 360px;
+    height: 80px;  
+}  
+
+.form-btn{
+    
+    border: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    background-color: #4E75FF;
+    padding: 8px, 16px;
+    border-radius:8px
+    
+
+    
+     
+}
