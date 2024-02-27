@@ -7,28 +7,28 @@ const form = document.querySelector(".feedback-form");
 function readFormData(form){
     const email = form.email.value.trim();
     const message = form.message.value.trim();
-    // console.log('email:',email)
-    // console.log('message:',message)
     return {
         email,
         message
-    }
-}
+    } 
+}  
+
+
 form.addEventListener("submit",(event) => {
     event.preventDefault();
    
-    if(form.email.value === "" && form.message.value ===""){
+    if(form.email.value.trim() === "" && form.message.value.trim() ===""){
         console.log('Заповніть форму !!!')
     } else
-    if(form.email.value === ""  ){
+    if(form.email.value.trim() === ""  ){
         
         console.log('Заповніть email !!!')
     
     } else 
-    if (form.message.value === "" ){
+    if (form.message.value.trim() === "" ){
         console.log('Заповніть message !!!')
     }
-
+    console.log(readFormData(event.currentTarget))
     localStorage.removeItem(STORAGE_KEY);
     form.reset()
 })
@@ -36,7 +36,6 @@ form.addEventListener("submit",(event) => {
 form.addEventListener('input',(event) => {
     event.preventDefault();
     const data = readFormData(event.currentTarget);
-    console.log(data)
     const jsonData = JSON.stringify(data);
     localStorage.setItem(STORAGE_KEY,jsonData);
    

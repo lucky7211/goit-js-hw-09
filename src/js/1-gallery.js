@@ -92,7 +92,6 @@ const images = [
   }
 
   const lightbox = new SimpleLightbox('.gallery-link', {captionsData:'alt',captionDelay:250});
-  lightbox.open()
  
 
  
