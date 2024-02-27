@@ -107,29 +107,3 @@ const images = [
 
 
   
-  // gallery.addEventListener("click", (event) => {
-  //   event.preventDefault();
-  // })
-  
-  //   if (event.target.classList.contains("gallery-image")) {
-  //     const dataSource = event.target.getAttribute("data-source");
-  //     const description = event.target.getAttribute("alt");
-  
-  //     const instance = basicLightbox.create(
-  //       `  <div class="modal">
-  //       <img src="${dataSource}" alt="${description}">
-  //     </div>`
-  //     );
-  //     instance.show();
-  
-  //     //  автоматичне закриття модалки
-  //     // instance.close();
-  
-  //     // ручне закриття модалки
-  //     const box = document.querySelector(".basicLightbox");
-  
-  //     box.addEventListener("click", (event) => {
-  //       instance.close(event);
-  //     });
-  //   }
-  // });
